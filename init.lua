@@ -1,5 +1,6 @@
 --[[
 https://youtu.be/m8C0Cq9Uv9o?si=G09Vdql7j3y3rwrs
+tjdevries on kickstart nvim
 
 see :help lspconfig-all for a list of all the pre-configured lsps
 
@@ -845,8 +846,9 @@ require('lazy').setup({
     'nvim-treesitter/nvim-treesitter',
     build = ':TSUpdate',
     opts = {
-      ensure_installed = { 'bash', 'c', 'diff', 'html', 'lua', 'luadoc', 'markdown', 'vim', 'vimdoc' },
+      ensure_installed = { 'bash', 'c', 'diff', 'html', 'lua', 'luadoc', 'vim', 'vimdoc' },
       -- Autoinstall languages that are not installed
+      -- removed markdown from above as causing error on readme.md
       auto_install = true,
       highlight = {
         enable = true,
@@ -885,7 +887,7 @@ require('lazy').setup({
   --
   require 'kickstart.plugins.debug',
   require 'kickstart.plugins.indent_line',
-  require 'kickstart.plugins.lint',
+  --require 'kickstart.plugins.lint',
   require 'kickstart.plugins.autopairs',
   require 'kickstart.plugins.neo-tree',
   require 'kickstart.plugins.gitsigns', -- adds gitsigns recommend keymaps
