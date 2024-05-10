@@ -177,7 +177,7 @@ vim.keymap.set('n', '<C-k>', '<C-w><C-k>', { desc = 'Move focus to the upper win
 
 -- jimmy desu
 vim.keymap.set('n', ';', ':', { desc = 'CMD enter command mode' })
-vim.keymap.set('i', 'uu', '<ESC>')
+vim.keymap.set('i', 'kk', '<ESC>')
 vim.keymap.set('n', 'j', 'gj')
 vim.keymap.set('n', 'k', 'gk')
 vim.keymap.set('v', 'j', 'gj')
