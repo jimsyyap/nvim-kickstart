@@ -5,7 +5,8 @@ see https://youtu.be/m8C0Cq9Uv9o?si=ttKqWxOg-NHENdbE
 
 ## TODO
 
-- <s>how to activate add emmet lsp
+- how to use coq.nvim https://github.com/ms-jpq/coq_nvim
 - how to open nerdtree(similar)?
-- how come snippets doesnt show?
-- how to snippets autocomplete lsp?
+- <s>how come snippets doesnt show?</s>
+- <s>how to snippets autocomplete lsp?</s>
+- <s>how to activate add emmet lsp</s>
