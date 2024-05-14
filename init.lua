@@ -518,13 +518,15 @@ require('lazy').setup({
         --html = {},
         -- uninstalled html-lsp as snippets adds extra indent? testing
         --jinja_lsp = {},
+        intelephense = {},
         jedi_language_server = {}, --this for python lsp
         --jsonls = {},
-        prettier = {}, -- javascript et al, else tsserver as comment below
-        phpactor = {}, -- this for php
+        --prettier = {}, -- javascript et al, else tsserver as comment below, see :Mason
+        --phpactor = {}, -- this for php
         --postgres_lsp = {},
         --pylsp = {},
-        --tsserver = {},
+        tsserver = {},
+        volar = {},
         --pyright = {},
         --dockerls ={},
         -- rust_analyzer = {},
