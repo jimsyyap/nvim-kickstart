@@ -529,6 +529,8 @@ require('lazy').setup({
         --phpactor = {}, -- this for php
         --postgres_lsp = {},
         --pylsp = {},
+        --stimulus_ls = {},
+        --  stimulus didnt work on blade.php file
         tlint = {},
         tsserver = {},
         volar = {},
