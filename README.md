@@ -5,6 +5,7 @@ see https://youtu.be/m8C0Cq9Uv9o?si=ttKqWxOg-NHENdbE
 
 ## TODO
 
+- uncommented friendly snippets in init.lua
 - how to use coq.nvim https://github.com/ms-jpq/coq_nvim
 - how to open nerdtree(similar)?
 - <s>how come snippets doesnt show?</s>
