@@ -522,6 +522,7 @@ require('lazy').setup({
         --},
         -- uninstalled html-lsp as snippets adds extra indent? testing
         --jinja_lsp = {},
+        gopls = {},
         intelephense = {},
         jedi_language_server = {}, --this for python lsp
         --jsonls = {},
@@ -531,7 +532,7 @@ require('lazy').setup({
         --pylsp = {},
         --stimulus_ls = {},
         --  stimulus didnt work on blade.php file
-        tlint = {},
+        --tlint = {},
         tsserver = {},
         volar = {},
         --pyright = {},
