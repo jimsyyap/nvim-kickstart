@@ -483,11 +483,12 @@ require('lazy').setup({
           -- code, if the language server you are using supports them
           --
           -- This may be unwanted, since they displace some of your code
-          if client and client.server_capabilities.inlayHintProvider and vim.lsp.inlay_hint then
-            map('<leader>th', function()
-              vim.lsp.inlay_hint.enable(not vim.lsp.inlay_hint.is_enabled())
-            end, '[T]oggle Inlay [H]ints')
-          end
+          -- jim: commented out 17/05/2024
+          -- if client and client.server_capabilities.inlayHintProvider and vim.lsp.inlay_hint then
+          --   map('<leader>th', function()
+          --     vim.lsp.inlay_hint.enable(not vim.lsp.inlay_hint.is_enabled())
+          --   end, '[T]oggle Inlay [H]ints')
+          -- end
         end,
       })
 
@@ -511,11 +512,14 @@ require('lazy').setup({
         --clangd = {},
         -- gopls = {},
         bashls = {},
+        --blade = {},
         --cssls = {},
         --css_variables = {},
         --emmet_language_server = {},
         emmet_ls = {},
-        --html = {},
+        --html = {
+        --filetypes = { 'html', 'blade' },
+        --},
         -- uninstalled html-lsp as snippets adds extra indent? testing
         --jinja_lsp = {},
         intelephense = {},
@@ -525,6 +529,7 @@ require('lazy').setup({
         --phpactor = {}, -- this for php
         --postgres_lsp = {},
         --pylsp = {},
+        tlint = {},
         tsserver = {},
         volar = {},
         --pyright = {},
