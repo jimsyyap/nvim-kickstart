@@ -741,6 +741,16 @@ require('lazy').setup({
       }
     end,
   },
+  -- below added 17/05/2024, cursor in word, surround with delimiters
+  -- {
+  --   'kylechui/nvim-surround',
+  --   event = 'VeryLazy',
+  --   config = function()
+  --     require('nvim-surround').setup {
+  --       -- config here, empty for defaults
+  --     }
+  --   end,
+  -- },
 
   { -- You can easily change to a different colorscheme.
     -- Change the name of the colorscheme plugin below, and then
