@@ -6,6 +6,7 @@ see https://youtu.be/m8C0Cq9Uv9o?si=ttKqWxOg-NHENdbE
 ## TODO
 
 - added gopls bec go shift
+- true highlight search, disable on hh
 - if nvim breaks, see comment-out 17/05/2024
 - uncommented friendly snippets in init.lua
 - how to use coq.nvim https://github.com/ms-jpq/coq_nvim
