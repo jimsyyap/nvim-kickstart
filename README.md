@@ -10,6 +10,8 @@ see https://youtu.be/m8C0Cq9Uv9o?si=ttKqWxOg-NHENdbE
 - uncommented friendly snippets in init.lua
 - how to use coq.nvim https://github.com/ms-jpq/coq_nvim
 - how to open nerdtree(similar)?
+- disabled kickstart/plugin/indent-blankline.vim
+- ...giving error on nvim startup
 - <s>how come snippets doesnt show?</s>
 - <s>how to snippets autocomplete lsp?</s>
 - <s>how to activate add emmet lsp</s>
