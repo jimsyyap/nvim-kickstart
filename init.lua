@@ -4,6 +4,12 @@
 vim.g.mapleader = ' '
 vim.g.maplocalleader = ' '
 
+-- research how to nvim transparent_background,
+-- source https://www.reddit.com/r/neovim/comments/1bukmz6/noob_catpuccin_background_not_being_transparent/
+-- added 18/05/2024, no joy but didnt cause error
+vim.api.nvim_set_hl(0, 'Normal', { bg = 'none' })
+vim.api.nvim_set_hl(0, 'NormalFloat', { bg = 'none' })
+
 -- Set to true if you have a Nerd Font installed and selected in the terminal
 vim.g.have_nerd_font = true
 
@@ -759,16 +765,18 @@ require('lazy').setup({
     -- If you want to see what colorschemes are already installed, you can use `:Telescope colorscheme`.
     --'folke/tokyonight.nvim',
     --'catppuccin/nvim',
-    'xero/sourcerer.vim',
+    'EdenEast/nightfox.nvim',
+    --'xero/sourcerer.vim',
     --'ntk148v/habamax.nvim',
     --'rebelot/kanagawa.nvim',
     priority = 1000, -- Make sure to load this before all the other start plugins.
+    --transparent_background = false,
     init = function()
       -- Load the colorscheme here.
       -- Like many other themes, this one has different styles, and you could load
       -- any other, such as 'tokyonight-storm', 'tokyonight-moon', or 'tokyonight-day'.
       --vim.cmd.colorscheme 'tokyonight-night'
-      vim.cmd.colorscheme 'sourcerer'
+      vim.cmd.colorscheme 'nightfox'
       --vim.cmd.colorscheme 'kanagawa-wave'
       --vim.cmd.colorscheme 'habamax'
 
