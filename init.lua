@@ -521,7 +521,6 @@ require('lazy').setup({
       --        For example, to see the options for `lua_ls`, you could go to: https://luals.github.io/wiki/settings/
       local servers = {
         --clangd = {},
-        -- gopls = {},
         bashls = {},
         --blade = {},
         --cssls = {},
@@ -533,7 +532,9 @@ require('lazy').setup({
         --},
         -- uninstalled html-lsp as snippets adds extra indent? testing
         --jinja_lsp = {},
-        gopls = {},
+        gopls = {
+          filetypes = { 'go', 'gomod', 'gowork', 'gotmpl' },
+        },
         intelephense = {},
         jedi_language_server = {}, --this for python lsp
         sqlls = {},
