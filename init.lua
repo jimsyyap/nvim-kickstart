@@ -532,6 +532,7 @@ require('lazy').setup({
         gopls = {},
         intelephense = {},
         jedi_language_server = {}, --this for python lsp
+        sql = {},
         --jsonls = {},
         --prettier = {}, -- javascript et al, else tsserver as comment below, see :Mason
         --phpactor = {}, -- this for php
