@@ -187,6 +187,9 @@ require('lazy').setup({
 
   -- { 'tpope/vim-dadbod', opts = {} },
   -- "gc" to comment visual regions/lines
+
+  -- below added 20/05/2024
+  { 'xiyaowong/nvim-transparent', opts = {} },
   { 'numToStr/Comment.nvim', opts = {} },
 
   -- Here is a more advanced example where we pass configuration
