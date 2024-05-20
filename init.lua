@@ -190,6 +190,7 @@ require('lazy').setup({
 
   -- below added 20/05/2024
   { 'xiyaowong/nvim-transparent', opts = {} },
+  { 'ray-x/go.nvim', opts = {} },
   { 'numToStr/Comment.nvim', opts = {} },
 
   -- Here is a more advanced example where we pass configuration

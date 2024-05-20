@@ -6,6 +6,7 @@ see https://youtu.be/m8C0Cq9Uv9o?si=ttKqWxOg-NHENdbE
 ## TODO
 
 - installed sqlls 20/05/2024
+- test 'ray-x/go.nvim' on init.lua lazy.setup 20/05/2024
 - test 'xiyaowong/nvim-transparent'
 - test 'tpope/dadbod' https://youtu.be/NhTPVXP8n7w?si=SakT7KdS8v6WIVR4
 - added gopls bec shifted to golang
