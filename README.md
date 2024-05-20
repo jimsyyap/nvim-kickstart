@@ -5,6 +5,7 @@ see https://youtu.be/m8C0Cq9Uv9o?si=ttKqWxOg-NHENdbE
 
 ## TODO
 
+- installed sqlls 20/05/2024
 - test 'xiyaowong/nvim-transparent'
 - added gopls bec shifted to golang
 - true highlight search, disable on hh
