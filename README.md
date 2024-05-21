@@ -5,6 +5,7 @@ see https://youtu.be/m8C0Cq9Uv9o?si=ttKqWxOg-NHENdbE
 
 ## TODO
 
+- testing catppuccin lazyload
 - installed sqlls 20/05/2024
 - test 'ray-x/go.nvim' on init.lua lazy.setup 20/05/2024 source https://youtu.be/aeQn9MRTjxc?si=c6BJU4l-EncUz6Vw
 - test 'xiyaowong/nvim-transparent'
