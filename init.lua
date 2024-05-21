@@ -198,7 +198,7 @@ require('lazy').setup({
   -- "gc" to comment visual regions/lines
 
   -- below added 20/05/2024
-  { 'xiyaowong/nvim-transparent', opts = {} },
+  --{ 'xiyaowong/nvim-transparent', opts = {} },
   { 'ray-x/go.nvim', opts = {} },
   { 'numToStr/Comment.nvim', opts = {} },
 
@@ -800,6 +800,7 @@ require('lazy').setup({
       -- Like many other themes, this one has different styles, and you could load
       -- any other, such as 'tokyonight-storm', 'tokyonight-moon', or 'tokyonight-day'.
       --vim.cmd.colorscheme 'tokyonight-night'
+      --vim.g.nightfox_transparent_background = '1'
       vim.cmd.colorscheme 'nightfox'
       --vim.cmd.colorscheme 'kanagawa-wave'
       --vim.cmd.colorscheme 'habamax'
