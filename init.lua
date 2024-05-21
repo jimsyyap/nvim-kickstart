@@ -1,3 +1,4 @@
+-- this is kickstarter nvim
 -- Set <space> as the ppuccinleader key
 -- See `:help mapleader`
 -- Must happen before plugins are loaded (otherwise wrong leader will be used)
@@ -77,8 +78,8 @@ vim.opt.splitbelow = true
 -- Sets how neovim will display certain whitespace characters in the editor.
 --  See `:help 'list'`
 --  and `:help 'listchars'`
-vim.opt.list = true
-vim.opt.listchars = { tab = '» ', trail = '·', nbsp = '␣' }
+--vim.opt.list = true comment-out 21/05/2024
+--vim.opt.listchars = { tab = '» ', trail = '·', nbsp = '␣' }
 
 -- Preview substitutions live, as you type!
 vim.opt.inccommand = 'split'
@@ -97,6 +98,14 @@ vim.opt.termguicolors = true
 
 -- Set highlight on search, but clear on pressing <Esc> in normal mode
 vim.opt.hlsearch = true
+
+--below added  21/05/2024
+vim.opt.backspace = { 'start', 'eol', 'indent' }
+vim.opt.wildignore:append { '*/node_modules/*' }
+vim.scriptencoding = 'utf-8'
+vim.opt.encoding = 'utf-8'
+vim.opt.fileencoding = 'utf-8'
+
 vim.keymap.set('n', '<Esc>', '<cmd>nohlsearch<CR>')
 
 -- Diagnostic keymaps
@@ -533,7 +542,15 @@ require('lazy').setup({
         -- uninstalled html-lsp as snippets adds extra indent? testing
         --jinja_lsp = {},
         gopls = {
-          filetypes = { 'go', 'gomod', 'gowork', 'gotmpl' },
+          -- not sure if below snippets work..test
+          -- filetypes = { 'go', 'gomod', 'gowork', 'gotmpl' },
+          -- settings = {
+          --   completeUnimported = true,
+          --   usePlaceholders = true,
+          --   analyses = {
+          --     unusedparams = true,
+          --   },
+          -- },
         },
         intelephense = {},
         jedi_language_server = {}, --this for python lsp
