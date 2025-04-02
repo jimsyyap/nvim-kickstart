@@ -3,6 +3,7 @@
 ## jim logs
 
 - keymap semicolon to colon moved from custom to main init.lua 02/04/2025
+- added wrap
 - keymap xx to <Esc> on i-mode on main init.lua 02/04/2025
 - lazyvim config didnt work?
 
