@@ -1,4 +1,8 @@
-# kickstart.nvim
+# my version of kickstart.nvim
+
+## jim logs
+
+- lazyvim config didnt work?
 
 ## Introduction
 
