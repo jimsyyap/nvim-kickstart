@@ -123,7 +123,7 @@ vim.keymap.set('n', '<C-k>', '<C-w><C-k>', { desc = 'Move focus to the upper win
 
 -- jims custom keymaps
 vim.keymap.set('n', ';', ':', { desc = 'remap semicolon to colon' })
-vim.keymap.set('i', 'xx', '<Esc>', { desc = 'xx to esc from i' })
+vim.keymap.set('i', '@@', '<Esc>', { desc = 'xx to esc from i' })
 --
 -- [[ Basic Autocommands ]]
 --  See `:help lua-guide-autocommands`
