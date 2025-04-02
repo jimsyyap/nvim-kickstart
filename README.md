@@ -10,4 +10,4 @@
 
 - emmet plugin
 - react html css plugins
-- catpuccin transparent bg
+- ~~catpuccin transparent bg~~
