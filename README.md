@@ -2,6 +2,7 @@
 
 ## jim logs
 
+- added ftdetect autocommentoff + fold, joy
 - added (jims)vim.opts for golang 4 space indent, joy
 - enabled auto-pairs(default kickstart) inside init.lua after set in plugins/, joy
 - enabled plugins/emmet, joy
