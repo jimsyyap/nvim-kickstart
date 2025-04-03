@@ -2,6 +2,8 @@
 
 ## jim logs
 
+- enabled auto-pairs(default kickstart) inside init.lua after set in plugins/, joy
+- enabled plugins/emmet, joy
 - esc mapped to ;;
 - keymap semicolon to colon moved from custom to main init.lua 02/04/2025
 - added wrap

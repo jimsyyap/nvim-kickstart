@@ -123,7 +123,7 @@ vim.keymap.set('n', '<C-k>', '<C-w><C-k>', { desc = 'Move focus to the upper win
 
 -- jims custom keymaps
 vim.keymap.set('n', ';', ':', { desc = 'remap semicolon to colon' })
-vim.keymap.set('i', ';;', '<Esc>', { desc = 'xx to esc from i' })
+vim.keymap.set('i', ';;', '<Esc>', { desc = ';; to esc from i' })
 vim.keymap.set('n', 'j', 'gj')
 vim.keymap.set('n', 'k', 'gk')
 vim.keymap.set('v', 'j', 'gj')
@@ -935,7 +935,8 @@ require('lazy').setup({
   require 'kickstart.plugins.debug',
   -- require 'kickstart.plugins.indent_line',
   -- require 'kickstart.plugins.lint',
-  -- require 'kickstart.plugins.autopairs',
+  require 'kickstart.plugins.autopairs',
+  require 'kickstart.plugins.emmet',
   -- require 'kickstart.plugins.neo-tree',
   -- require 'kickstart.plugins.gitsigns', -- adds gitsigns recommend keymaps
 
