@@ -13,6 +13,6 @@
 
 ### TODO
 
-- emmet plugin
+- ~~emmet plugin~~
 - react html css plugins
 - ~~catpuccin transparent bg~~
