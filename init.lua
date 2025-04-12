@@ -1,4 +1,5 @@
 -- Set <space> as the leader key
+
 -- See `:help mapleader`
 --  NOTE: Must happen before plugins are loaded (otherwise wrong leader will be used)
 vim.g.mapleader = ' '
@@ -128,7 +129,7 @@ vim.keymap.set('n', '<C-k>', '<C-w><C-k>', { desc = 'Move focus to the upper win
 
 -- jims custom keymaps
 vim.keymap.set('n', ';', ':', { desc = 'remap semicolon to colon' })
-vim.keymap.set('i', ';;', '<Esc>', { desc = ';; to esc from i' })
+vim.keymap.set('i', '<A-h>', '<Esc>', { desc = ';; to esc from i' })
 vim.keymap.set('n', 'j', 'gj')
 vim.keymap.set('n', 'k', 'gk')
 vim.keymap.set('v', 'j', 'gj')
