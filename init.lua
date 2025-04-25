@@ -855,6 +855,7 @@ require('lazy').setup({
       --       comments = { italic = false }, -- Disable italics in comments
       --     },
       --   }
+      -- 'EdenEast/nightfox.nvim'
 
       -- Load the colorscheme here.
       -- Like many other themes, this one has different styles, and you could load
