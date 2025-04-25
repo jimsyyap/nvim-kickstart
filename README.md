@@ -2,6 +2,7 @@
 
 ## jim logs
 
+- to add colorscheme, see init.lua comments
 - added terraform-ls for sparc proj
 - added ftdetect autocommentoff + fold, joy
 - added (jims)vim.opts for golang 4 space indent, joy
