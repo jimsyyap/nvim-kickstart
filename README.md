@@ -2,6 +2,7 @@
 
 ## jim logs
 
+- change esc to uu...joy
 - to add colorscheme, see init.lua comments
 - added terraform-ls for sparc proj
 - added ftdetect autocommentoff + fold, joy
