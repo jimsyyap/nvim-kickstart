@@ -2,6 +2,7 @@
 
 ## jim logs
 
+- if copy-paste from clipboard no joy, test xclip or wl-clipboard
 - change esc to uu...joy
 - to add colorscheme, see init.lua comments
 - added terraform-ls for sparc proj
