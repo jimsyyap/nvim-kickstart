@@ -1,3 +1,25 @@
+-- gai fold persist joy
+local augroup = vim.api.nvim_create_augroup
+local autocmd = vim.api.nvim_create_autocmd
+
+local folds_augroup = augroup('Folds', { clear = true })
+
+autocmd('BufWinLeave', {
+  group = folds_augroup,
+  pattern = '*', -- Apply to all files
+  command = 'mkview',
+  desc = 'Save folds when leaving a buffer',
+})
+
+autocmd('BufWinEnter', {
+  group = folds_augroup,
+  pattern = '*', -- Apply to all files
+  command = 'silent! loadview',
+  desc = 'Load folds when entering a buffer',
+})
+
+-- Optional: Configure what aspects of the view are saved/restored
+-- vim.opt.viewoptions:remove("options")
 -- Set <space> as the leader key
 
 -- See `:help mapleader`

@@ -2,6 +2,7 @@
 
 ## jim logs
 
+- fold persist on init.lua is joy
 - if copy-paste from clipboard no joy, test xclip or wl-clipboard
 - change esc to uu...joy
 - to add colorscheme, see init.lua comments

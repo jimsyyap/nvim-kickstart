@@ -8,8 +8,8 @@ augroup END
 "set foldmethod=indent "syntax, indent or manual 
 
 " save folds on close https://vim.fandom.com/wiki/Make_views_automatic
-" autocmd BufWinLeave *.* mkview
-" autocmd BufWinEnter *.* silent loadview
+"autocmd BufWinLeave *.* mkview
+"autocmd BufWinEnter *.* silent loadview
 
 set foldnestmax=10
 set foldlevel=99
