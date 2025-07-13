@@ -2,8 +2,8 @@
 " see http://vim.wikia.com/wiki/Folding
 " zo/zc..za toggles folding; zM fold all; zR unfold all; :help(folding)
 augroup vimrc
-  au BufReadPre * setlocal foldmethod=indent
-  au BufWinEnter * if &fdm == 'indent' | setlocal foldmethod=manual | endif
+  au BufReadPre * setlocal foldmethod=manual
+  au BufWinEnter * if &fdm == 'manual' | setlocal foldmethod=manual | endif
 augroup END
 "set foldmethod=indent "syntax, indent or manual 
 
