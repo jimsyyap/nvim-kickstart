@@ -151,7 +151,8 @@ vim.keymap.set('n', '<C-k>', '<C-w><C-k>', { desc = 'Move focus to the upper win
 
 -- jims custom keymaps
 vim.keymap.set('n', ';', ':', { desc = 'remap semicolon to colon' })
-vim.keymap.set('i', 'uu', '<Esc>', { desc = ';; to esc from i' })
+vim.keymap.set('i', 'hh', '<Esc>', { desc = 'uu to esc from i' })
+
 vim.keymap.set('n', 'j', 'gj')
 vim.keymap.set('n', 'k', 'gk')
 vim.keymap.set('v', 'j', 'gj')
