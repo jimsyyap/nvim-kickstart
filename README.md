@@ -19,6 +19,3 @@
 
 ### TODO
 
-- ~~emmet plugin~~
-- react html css plugins
-- ~~catpuccin transparent bg~~
