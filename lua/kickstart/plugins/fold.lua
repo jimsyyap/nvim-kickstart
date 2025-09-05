@@ -1,28 +1,28 @@
-vim.api.nvim_create_autocmd('BufWinLeave', {
-  pattern = '*',
-  callback = function()
-    if vim.fn.expand '%' ~= '' and vim.bo.buftype == '' then -- Check for file name and normal buffer type
-      vim.cmd 'mkview'
-    end
-  end,
-})
-
--- gai fold persist joy
-local augroup = vim.api.nvim_create_augroup
-local autocmd = vim.api.nvim_create_autocmd
-
-local folds_augroup = augroup('Folds', { clear = true })
-
-autocmd('BufWinLeave', {
-  group = folds_augroup,
-  pattern = '*', -- Apply to all files
-  command = 'mkview',
-  desc = 'Save folds when leaving a buffer',
-})
-
-autocmd('BufWinEnter', {
-  group = folds_augroup,
-  pattern = '*', -- Apply to all files
-  command = 'silent! loadview',
-  desc = 'Load folds when entering a buffer',
-})
+-- vim.api.nvim_create_autocmd('BufWinLeave', {
+--   pattern = '*',
+--   callback = function()
+--     if vim.fn.expand '%' ~= '' and vim.bo.buftype == '' then -- Check for file name and normal buffer type
+--       vim.cmd 'mkview'
+--     end
+--   end,
+-- })
+--
+-- -- gai fold persist joy
+-- local augroup = vim.api.nvim_create_augroup
+-- local autocmd = vim.api.nvim_create_autocmd
+--
+-- local folds_augroup = augroup('Folds', { clear = true })
+--
+-- autocmd('BufWinLeave', {
+--   group = folds_augroup,
+--   pattern = '*', -- Apply to all files
+--   command = 'mkview',
+--   desc = 'Save folds when leaving a buffer',
+-- })
+--
+-- autocmd('BufWinEnter', {
+--   group = folds_augroup,
+--   pattern = '*', -- Apply to all files
+--   command = 'silent! loadview',
+--   desc = 'Load folds when entering a buffer',
+-- })

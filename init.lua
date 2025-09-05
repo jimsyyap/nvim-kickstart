@@ -85,6 +85,27 @@ vim.opt.termguicolors = true
 -- See `:help 'confirm'`
 vim.opt.confirm = true
 
+-- jims fold (source grok)
+vim.api.nvim_create_autocmd({ 'BufWinLeave', 'BufLeave', 'WinLeave' }, {
+  pattern = { '*.*' },
+  callback = function()
+    if vim.fn.expand '%' ~= '' and vim.bo.buftype == '' then
+      vim.cmd 'mkview'
+    end
+  end,
+})
+vim.api.nvim_create_autocmd('BufWinEnter', {
+  pattern = { '*.*' },
+  callback = function()
+    if vim.fn.expand '%' ~= '' and vim.bo.buftype == '' then
+      vim.cmd 'silent! loadview'
+    end
+  end,
+})
+vim.opt.foldmethod = 'manual' -- or "indent", "marker", "syntax" based on your preference
+vim.opt.foldenable = true -- Enable folding
+vim.opt.foldlevelstart = 99 -- Start with all folds open (adjust as needed)
+
 -- jims vim.opt
 vim.opt.shiftwidth = 4
 vim.opt.tabstop = 4
@@ -866,7 +887,19 @@ require('lazy').setup({
       vim.cmd.colorscheme 'catppuccin'
     end,
   },
-
+  -- {
+  --   -- source grok
+  --   'olimorris/persisted.nvim',
+  --   config = true,
+  --   require('persisted').setup {
+  --     save_dir = vim.fn.expand '~/.local/state/nvim/sessions/',
+  --     autosave = true,
+  --     autoload = true,
+  --     should_autosave = function()
+  --       return vim.bo.buftype == ''
+  --     end,
+  --   },
+  -- },
   -- Highlight todo, notes, etc in comments
   { 'folke/todo-comments.nvim', event = 'VimEnter', dependencies = { 'nvim-lua/plenary.nvim' }, opts = { signs = false } },
 
