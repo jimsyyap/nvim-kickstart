@@ -2,7 +2,7 @@
 
 ## jim logs
 
-- fold persist on init.lua is joy
+- created fold.lua to fix warnings when search buffer grep etc.. Joy
 - if copy-paste from clipboard no joy, test xclip or wl-clipboard
 - change esc to uu...joy
 - to add colorscheme, see init.lua comments
