@@ -2,7 +2,7 @@
 
 ## jim logs
 
-- updated init.lua fold persist as per grok ...joy
+- updated init.lua fold persist as per grok(doesnt affect search grep) ...joy
 - if copy-paste from clipboard no joy, test xclip or wl-clipboard
 - change esc to uu...joy
 - to add colorscheme, see init.lua comments
