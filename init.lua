@@ -966,6 +966,19 @@ require('lazy').setup({
     --    - Treesitter + textobjects: https://github.com/nvim-treesitter/nvim-treesitter-textobjects
   },
 
+  -- {
+  --   'derektata/lorem.nvim',
+  --   config = function()
+  --     require('lorem').opts {
+  --       sentence_length = 'mixed', -- using a default configuration
+  --       comma_chance = 0.3, -- 30% chance to insert a comma
+  --       max_commas = 2, -- maximum 2 commas per sentence
+  --       debounce_ms = 200, -- default debounce time in milliseconds
+  --     }
+  --   end,
+  -- because emmet has lorem
+  -- },
+
   -- The following comments only work if you have downloaded the kickstart repo, not just copy pasted the
   -- init.lua. If you want these files, they are in the repository, so you can just download them and
   -- place them in the correct locations.
