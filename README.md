@@ -2,7 +2,7 @@
 
 ## jim logs
 
-- lua/kickstart/plugins/emmet.lua is no joy 10sep25
+- mv'd emmet.lua to lua/custom/plugins, activated init.lua still figure out
 - updated init.lua fold persist as per grok(doesnt affect search grep) ...joy
 - if copy-paste from clipboard no joy, test xclip or wl-clipboard
 - change esc to uu...joy

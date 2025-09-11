@@ -860,6 +860,7 @@ require('lazy').setup({
     -- If you want to see what colorschemes are already installed, you can use `:Telescope colorscheme`.
     'catppuccin/nvim',
     -- 'EdenEast/nightfox.nvim',
+    -- 'folke/tokyonight.nvim',
     priority = 1000,
     config = function()
       ---@diagnostic disable-next-line: missing-fields
@@ -992,7 +993,7 @@ require('lazy').setup({
   -- require 'kickstart.plugins.indent_line',
   -- require 'kickstart.plugins.lint',
   require 'kickstart.plugins.autopairs',
-  require 'kickstart.plugins.emmet',
+  -- require 'kickstart.plugins.emmet',
   -- require 'kickstart.plugins.neo-tree',
   -- require 'kickstart.plugins.gitsigns', -- adds gitsigns recommend keymaps
 
