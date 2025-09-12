@@ -2,6 +2,7 @@
 
 ## jim logs
 
+- init.lua, added 'emmet_ls {}', joy
 - mv'd emmet.lua to lua/custom/plugins, activated init.lua still figure out
 - updated init.lua fold persist as per grok(doesnt affect search grep) ...joy
 - if copy-paste from clipboard no joy, test xclip or wl-clipboard
