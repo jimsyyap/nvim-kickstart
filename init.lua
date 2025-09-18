@@ -862,12 +862,13 @@ require('lazy').setup({
     -- If you want to see what colorschemes are already installed, you can use `:Telescope colorscheme`.
     --'EdenEast/nightfox.nvim',
     'catppuccin/nvim',
-    -- 'EdenEast/nightfox.nvim',
+    --'EdenEast/nightfox.nvim',
     -- 'folke/tokyonight.nvim',
     priority = 1000,
     config = function()
       ---@diagnostic disable-next-line: missing-fields
       require('catppuccin').setup {
+        -- require('nightfox').setup {
         flavour = 'auto', -- latte, frappe, macchiato, mocha
         background = { -- :h background
           light = 'latte',
@@ -889,6 +890,7 @@ require('lazy').setup({
       -- Like many other themes, this one has different styles, and you could load
       -- any other, such as 'tokyonight-storm', 'tokyonight-moon', or 'tokyonight-day'.
       vim.cmd.colorscheme 'catppuccin'
+      -- vim.cmd.colorscheme 'nightfox'
     end,
   },
   -- {
