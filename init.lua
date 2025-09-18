@@ -158,6 +158,9 @@ vim.keymap.set('n', 'j', 'gj')
 vim.keymap.set('n', 'k', 'gk')
 vim.keymap.set('v', 'j', 'gj')
 vim.keymap.set('v', 'k', 'gk')
+-- Colorscheme
+-- You can configure highlights by doing something like:
+vim.cmd.hi 'Comment gui=none'
 --
 -- [[ Basic Autocommands ]]
 --  See `:help lua-guide-autocommands`
@@ -854,38 +857,30 @@ require('lazy').setup({
       }
     end,
   },
-  {
-    'ellisonleao/gruvbox.nvim',
-    priority = 1000,
-    config = function()
-      vim.cmd 'colorscheme gruvbox'
-    end,
-  },
-
   -- Nord
-  {
-    'shaunsingh/nord.nvim',
-    priority = 1000,
-    config = function()
-      vim.cmd 'colorscheme nord'
-    end,
-  },
-  {
-    'EdenEast/nightfox.nvim',
-    priority = 1000,
-    config = function()
-      vim.cmd 'colorscheme nightfox'
-    end,
-  },
-  {
-    -- Example with Tokyonight
-    'folke/tokyonight.nvim',
-    priority = 1000, -- Make sure to load this before all the other start plugins
-    config = function()
-      -- Load the colorscheme here
-      vim.cmd [[colorscheme tokyonight]]
-    end,
-  },
+  -- {
+  --   'shaunsingh/nord.nvim',
+  --   --priority = 1000,
+  --   config = function()
+  --     vim.cmd 'colorscheme nord'
+  --   end,
+  -- },
+  -- {
+  --   'EdenEast/nightfox.nvim',
+  --   --priority = 1000,
+  --   config = function()
+  --     vim.cmd 'colorscheme nightfox'
+  --   end,
+  -- },
+  -- {
+  --   -- Example with Tokyonight
+  --   'folke/tokyonight.nvim',
+  --   --priority = 1000, -- Make sure to load this before all the other start plugins
+  --   config = function()
+  --     -- Load the colorscheme here
+  --     vim.cmd [[colorscheme tokyonight]]
+  --   end,
+  -- },
   { -- You can easily change to a different colorscheme.
     -- Change the name of the colorscheme plugin below, and then
     -- change the command in the config to whatever the name of that colorscheme is.
