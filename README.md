@@ -2,7 +2,7 @@
 
 ## jim logs
 
-- added colorscheme seems to be ok. Testing
+- added colorscheme seems to be ok. Joy
 - uncomment kickstart.plugins.indent_line
 - init.lua, added 'emmet_ls {}', joy
 - mv'd emmet.lua to lua/custom/plugins, activated init.lua still figure out
