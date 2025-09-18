@@ -2,6 +2,7 @@
 
 ## jim logs
 
+- installed nightfox colorscheme, joy
 - uncomment kickstart.plugins.indent_line
 - init.lua, added 'emmet_ls {}', joy
 - mv'd emmet.lua to lua/custom/plugins, activated init.lua still figure out
