@@ -2,6 +2,7 @@
 
 ## jim logs
 
+- comment out pyright, emmet-ls bec 'not installed'
 - added colorscheme seems to be ok. Joy
 - uncomment kickstart.plugins.indent_line
 - init.lua, added 'emmet_ls {}', joy
